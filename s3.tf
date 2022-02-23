@@ -3,7 +3,8 @@ resource "aws_s3_bucket" "b" {
   acl    = "private"
 
   tags = {
-    Name                 = "My bucket"
-    Environment          = "Dev"
+    Name        = "My bucket"
+    Environment = "Dev"
+    yor_trace   = "68ef0986-7fe9-4352-89f6-92446755c26a"
   }
 }
