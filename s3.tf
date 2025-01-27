@@ -12,6 +12,7 @@ resource "aws_s3_bucket" "b" {
     git_org              = "jjchavanne"
     git_repo             = "pc-s3-simple-demo"
     yor_trace            = "eabadc1f-0047-41e8-9bec-fee873040a4b"
+    yor_name             = "b"
   }
 }
 
@@ -34,7 +35,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "b" {
 
   rule {
     apply_server_side_encryption_by_default {
-      sse_algorithm     = "AES256"
+      sse_algorithm = "AES256"
     }
   }
 }
